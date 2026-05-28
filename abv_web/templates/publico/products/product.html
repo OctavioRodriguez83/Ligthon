@@ -25,7 +25,7 @@
     <aside class="product-gallery">
       <div class="gallery-main">
         {% if producto.producto_url_img %}
-          <img src="https://abvelectricsupply.com/media-files/{{ producto.producto_url_img.name }}"
+          <img src="/media-files/{{ producto.producto_url_img.name }}"
                alt="{{ producto.producto_nombre }}">
         {% else %}
           <img src="/media-files/publico/Logo.png"
@@ -36,7 +36,7 @@
       <div class="gallery-thumbs">
         {% for img in imagenes_secundarias %}
         <button class="thumb-btn">
-          <img src="https://abvelectricsupply.com/media-files/{{ img.imagen_secundaria.name }}" alt="">
+          <img src="/media-files/{{ img.imagen_secundaria.name }}" alt="">
         </button>
         {% endfor %}
       </div>

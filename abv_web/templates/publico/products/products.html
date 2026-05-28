@@ -41,7 +41,7 @@
       <div class="carousel-cards" id="carouselCards">
         {% for destacado in destacados %}
           <div class="card-destacado">
-            <img src="https://abvelectricsupply.com/media-files/{{ destacado.producto.producto_url_img }}"
+            <img src="/media-files/{{ destacado.producto.producto_url_img }}"
                  alt="{{ destacado.producto.producto_nombre }}">
             <h4>{{ destacado.producto.producto_nombre }}</h4>
             <p>{{ destacado.producto.descripcion|truncatewords:15 }}</p>

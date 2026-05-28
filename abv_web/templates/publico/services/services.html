@@ -13,7 +13,7 @@
     <div class="card{% if forloop.counter0|divisibleby:2 %} card-img-left{% else %} card-img-right{% endif %}">
       {% if forloop.counter0|divisibleby:2 %}
       <div class="imagencont">
-        <img src="https://abvelectricsupply.com/media-files/{{ servicio.servicio_imagen.name }}" class="imgcards" alt="{{ servicio.servicio_nombre }}">
+        <img src="/media-files/{{ servicio.servicio_imagen.name }}" class="imgcards" alt="{{ servicio.servicio_nombre }}">
       </div>
       <div class="textcardcont">
         <h3 class="card-title">{{ servicio.servicio_nombre }}</h3>
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="imagencont">
-        <img src="https://abvelectricsupply.com/media-files/{{ servicio.servicio_imagen.name }}" class="imgcards" alt="{{ servicio.servicio_nombre }}">
+        <img src="/media-files/{{ servicio.servicio_imagen.name }}" class="imgcards" alt="{{ servicio.servicio_nombre }}">
       </div>
       {% endif %}
     </div>

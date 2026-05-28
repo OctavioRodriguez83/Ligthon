@@ -36,7 +36,7 @@
 
                         {% for post in posts %}
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img class="carousel-imgc1-2 d-block w-100" src="https://abvelectricsupply.com/media-files/{{ post.carrouselBanner_url_img }}" alt="..." loading="lazy" width="1920" height="1080">
+                            <img class="carousel-imgc1-2 d-block w-100" src="/media-files/{{ post.carrouselBanner_url_img }}" alt="..." loading="lazy" width="1920" height="1080">
                             <div class="carousel-caption caption-left">
                                 <img class="imgpost" src="/media-files/publico/Logo.png" loading="lazy" width="200" height="200">
                                 <h1>{{ post.carrouselBanner_name }}</h1>
@@ -47,7 +47,7 @@
 
                         {% for cate in categorias %}
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img class="carousel-imgc1 d-block w-100" src="https://abvelectricsupply.com/media-files/{{ cate.categoria_url_img }}" alt="..." loading="lazy" width="1920" height="1080">
+                            <img class="carousel-imgc1 d-block w-100" src="/media-files/{{ cate.categoria_url_img }}" alt="..." loading="lazy" width="1920" height="1080">
                             <div class="carousel-caption caption-right INF">
                                 <h1 >{{ cate.categoria_name }}</h1>
                                 <p>{{ cate.carrouselBanner_descripcion }}</p>
@@ -73,7 +73,7 @@
                 {% for marca in marcas %}
                     <a href="{% url 'products' %}marca/{{ marca.marca_name }}">
                         <img loading="lazy" 
-                            src="https://abvelectricsupply.com/media-files/{{ marca.marca_url_img.name }}" 
+                            src="/media-files/{{ marca.marca_url_img.name }}" 
                             alt="{{ marca.marca_name }} Logo"
                             width="150" 
                             height="150"
@@ -84,7 +84,7 @@
                 {% for marca in marcas %}
                     <a href="{% url 'products' %}marca/{{ marca.marca_name }}">
                         <img loading="lazy" 
-                            src="https://abvelectricsupply.com/media-files/{{ marca.marca_url_img.name }}" 
+                            src="/media-files/{{ marca.marca_url_img.name }}" 
                             alt="{{ marca.marca_name }} Logo"
                             width="150" 
                             height="150"
@@ -95,7 +95,7 @@
                 {% for marca in marcas %}
                     <a href="{% url 'products' %}marca/{{ marca.marca_name }}">
                         <img loading="lazy" 
-                            src="https://abvelectricsupply.com/media-files/{{ marca.marca_url_img.name }}" 
+                            src="/media-files/{{ marca.marca_url_img.name }}" 
                             alt="{{ marca.marca_name }} Logo"
                             width="150" 
                             height="150"
@@ -106,7 +106,7 @@
                 {% for marca in marcas %}
                     <a href="{% url 'products' %}marca/{{ marca.marca_name }}">
                         <img loading="lazy" 
-                            src="https://abvelectricsupply.com/media-files/{{ marca.marca_url_img.name }}" 
+                            src="/media-files/{{ marca.marca_url_img.name }}" 
                             alt="{{ marca.marca_name }} Logo"
                             width="150" 
                             height="150"
@@ -117,7 +117,7 @@
                 {% for marca in marcas %}
                     <a href="{% url 'products' %}marca/{{ marca.marca_name }}">
                         <img loading="lazy" 
-                            src="https://abvelectricsupply.com/media-files/{{ marca.marca_url_img.name }}" 
+                            src="/media-files/{{ marca.marca_url_img.name }}" 
                             alt="{{ marca.marca_name }} Logo"
                             width="150" 
                             height="150"
@@ -149,7 +149,7 @@
                                         <div class="contcate">
                                             <a class="cateenlace" href="{% url 'products' %}categoria/{{ categoria_asociada.categoria_name }}">
                                                 <div class="imgcateg">
-                                                    <img src="https://abvelectricsupply.com/media-files/{{ categoria_asociada.categoria_url_img }}" class="d-block w-100" loading="lazy" width="250" height="250">
+                                                    <img src="/media-files/{{ categoria_asociada.categoria_url_img }}" class="d-block w-100" loading="lazy" width="250" height="250">
                                                 </div>
                                                 <span>{{ categoria_asociada.categoria_name }}</span>
                                             </a>
@@ -204,12 +204,12 @@
               <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="3000">
-                        <img class="carousel-imgc1 d-block w-100" src="https://abvelectricsupply.com/media-files/Imagenes_Carrusel_Integracion/carruselintegracion  (1).jpg" alt="..." loading="lazy" width="1920" height="1080">
+                        <img class="carousel-imgc1 d-block w-100" src="/media-files/Imagenes_Carrusel_Integracion/carruselintegracion  (1).jpg" alt="..." loading="lazy" width="1920" height="1080">
                       </div>
                     {% for destacado in indicators_range_carrusel4 %}
                       {% if destacado > 1 %}
                       <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="3000">
-                        <img class="carousel-imgc1 d-block w-100" src="https://abvelectricsupply.com/media-files/Imagenes_Carrusel_Integracion/carruselintegracion  ({{ destacado }}).jpg" alt="..." loading="lazy" width="1920" height="1080">
+                        <img class="carousel-imgc1 d-block w-100" src="/media-files/Imagenes_Carrusel_Integracion/carruselintegracion  ({{ destacado }}).jpg" alt="..." loading="lazy" width="1920" height="1080">
                       </div>
                       {% endif %}
                     {% endfor %}
@@ -253,7 +253,7 @@
                         {% if forloop.counter0|divisibleby:"2" %}
                             <div class="imagencont">
                                 {% if servicio.servicio_imagen %}
-                                    <img src="https://abvelectricsupply.com/media-files/{{ servicio.servicio_imagen.name }}" class="imgcards" alt="Imagen de {{ servicio.servicio_nombre }}" loading="lazy" width="400" height="300">
+                                    <img src="/media-files/{{ servicio.servicio_imagen.name }}" class="imgcards" alt="Imagen de {{ servicio.servicio_nombre }}" loading="lazy" width="400" height="300">
                                 {% endif %}
                             </div>
                             <div class="textcardcont">
@@ -267,7 +267,7 @@
                             </div>
                             <div class="imagencont">
                                 {% if servicio.servicio_imagen %}
-                                    <img src="https://abvelectricsupply.com/media-files/{{ servicio.servicio_imagen.name }}" class="imgcards" alt="Imagen de {{ servicio.servicio_nombre }}" loading="lazy" width="400" height="300">
+                                    <img src="/media-files/{{ servicio.servicio_imagen.name }}" class="imgcards" alt="Imagen de {{ servicio.servicio_nombre }}" loading="lazy" width="400" height="300">
                                 {% endif %}
                             </div>
                         {% endif %}

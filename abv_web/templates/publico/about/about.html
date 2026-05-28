@@ -60,7 +60,7 @@
             <div class="galeria">
               {% for destacado in destacados %}
               <div class="proyecto-card">
-                <img src="https://abvelectricsupply.com/media-files/{{ destacado.proyecto.proyecto_imagen.name }}"
+                <img src="/media-files/{{ destacado.proyecto.proyecto_imagen.name }}"
                      alt="{{ destacado.proyecto.proyecto_nombre }}"
                      class="proyecto-img">
                 <div class="proyecto-body">
@@ -86,7 +86,7 @@
                 <div class="card">
                     <div class="galeria">
                       {% for marca in marcas %}
-                      <img src="https://abvelectricsupply.com/media-files/{{ marca.marca_url_img.name }}" alt="1">
+                      <img src="/media-files/{{ marca.marca_url_img.name }}" alt="1">
                       {% endfor %}
                     </div>
                 </div>
